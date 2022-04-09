@@ -13,8 +13,7 @@ const Birthday = () => {
         {people.map((person) => {
             const {id, name, age, img} = person
 
-            return <div className="items" >
-                <div className="item" >
+            return <div className="item" >
                     <div className="user" key={id}>
                         <img src={img} alt="" />
                         <div className="info">
@@ -24,7 +23,6 @@ const Birthday = () => {
                     </div>
                     <a href="#" className="remove-btn" onClick={() => removeUser(id)}>remove</a>
                 </div>
-            </div>
         })}
 
         <a href="#" className="btn" onClick={() => setPeople([])}>clear all</a>

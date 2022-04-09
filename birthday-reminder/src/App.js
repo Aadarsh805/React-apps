@@ -4,7 +4,9 @@ import Setup from "./Birthday";
 function App() {
   return (
     <div className="container">
+      <div className="items">
       <Setup />
+      </div>
     </div>
   );
 }
